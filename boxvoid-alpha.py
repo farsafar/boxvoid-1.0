@@ -50,13 +50,7 @@ if anwser() == "/google":
     print("Que quieres buscar ")
     busqueda = input()
     pywhatkit.search(busqueda)
-
-
-
-    
-
         
-
 if anwser() == "/musica":
 
     print("Que musica quieres escuchar")
