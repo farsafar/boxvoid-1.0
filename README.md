@@ -17,3 +17,7 @@ pacman -Syu # pacman -S python
 COMANDOS PARA OPENSUSE Y DERIVADAS
 
 zypper in python3
+
+LIBRERIAS
+
+pip install pywhatkit
