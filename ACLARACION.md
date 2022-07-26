@@ -21,3 +21,13 @@ zypper in python3
 LIBRERIAS
 
 pip install pywhatkit
+
+COMANDOS
+
+/sumar
+/restar 
+/division
+/multiplicacion
+/google
+/musica
+/youtube
