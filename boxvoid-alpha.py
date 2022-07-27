@@ -1,5 +1,3 @@
-from googlesearch import search
-from ytmusicapi import YTMusic
 import pywhatkit
 
 print("Bienvenido a BoxVoid")
