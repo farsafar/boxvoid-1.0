@@ -75,7 +75,10 @@ if anwser() == "/youtube":
 
 if anwser() == "/update":
     
-    update = ("git clone https://github.com/farsafar/boxvoid-alpha ") 
+    update = ("git clone https://github.com/farsafar/boxvoid-alpha ")
     system(update)
     system(run)
 
+if anwser() == "/exit"
+
+    quit()
