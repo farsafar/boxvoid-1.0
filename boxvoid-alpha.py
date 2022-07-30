@@ -80,6 +80,6 @@ if anwser() == "/update":
     print("elimina esta carpeta y ejecuta la nueva carpeta de boxvoid")
     quit()
 
-if anwser() == "/exit"
+if anwser() == "/exit":
 
     quit()
