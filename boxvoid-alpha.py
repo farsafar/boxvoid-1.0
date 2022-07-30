@@ -78,6 +78,8 @@ if anwser() == "/update":
     update = ("git clone https://github.com/farsafar/boxvoid-alpha ")
     system(update)
     system(run)
+    print("elimina esta carpeta y ejecuta la nueva carpeta de boxvoid")
+    quit()
 
 if anwser() == "/exit"
 
