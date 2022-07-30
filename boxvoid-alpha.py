@@ -1,4 +1,9 @@
 import pywhatkit
+from os import system
+
+#variables
+
+run = ("python3 run.py")
 
 print("Bienvenido a BoxVoid")
 print("Cual es tu nombre")
@@ -15,6 +20,7 @@ if anwser() == "/sumar":
     numero2 = int(input())
     print ("el resultado")
     print (numero1 + numero2)
+    system(run)
 
 if anwser() == "/resta":
     
@@ -24,6 +30,7 @@ if anwser() == "/resta":
     numero2 = int(input())
     print ("el resultado")
     print (numero1 - numero2)
+    system(run)
 
 if anwser() == "/multiplicacion":
     
@@ -33,6 +40,7 @@ if anwser() == "/multiplicacion":
     numero2 = int(input())
     print ("el resultado")
     print (numero1 * numero2)
+    system(run)
 
 if anwser() == "/division":
     
@@ -42,21 +50,32 @@ if anwser() == "/division":
     numero2 = int(input())
     print ("el resultado")
     print (numero1 / numero2)
+    system(run)
 
 if anwser() == "/google":
     
     print("Que quieres buscar ")
     busqueda = input()
     pywhatkit.search(busqueda)
+    system(run)
         
 if anwser() == "/musica":
 
     print("Que musica quieres escuchar")
     musica = input()
     pywhatkit.playonyt(musica)
+    system(run)
 
 if anwser() == "/youtube":
 
     print("Que Quieres ver")
     videos = input()
     pywhatkit.playonyt(videos)
+    system(run)
+
+if anwser() == "/update":
+    
+    update = ("git clone https://github.com/farsafar/boxvoid-alpha ") 
+    system(update)
+    system(run)
+
