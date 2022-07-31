@@ -1,5 +1,5 @@
 import pywhatkit
-from os import system
+from os import mkdir, system
 
 #variables
 
@@ -77,7 +77,7 @@ if anwser() == "/update":
     
     update = ("git clone https://github.com/farsafar/boxvoid-alpha ")
     system(update)
-    print("elimina esta carpeta y ejecuta la nueva carpeta de boxvoid")
+    print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
     quit()
 
 if anwser() == "/exit":
