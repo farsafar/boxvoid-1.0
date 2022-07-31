@@ -1,3 +1,4 @@
+from codecs import charmap_decode
 import pywhatkit
 from os import mkdir, system
 
@@ -79,6 +80,12 @@ if anwser() == "/update":
     system(update)
     print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
     quit()
+
+if anwser() == "/cmd":
+
+    cmd = input("$ ")
+    system(cmd)
+    system(run)
 
 if anwser() == "/exit":
 
