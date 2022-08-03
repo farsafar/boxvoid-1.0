@@ -2,6 +2,7 @@ import pywhatkit
 from os import system
 
 run = ("python3 run.py")
+alpha = ("python3 alpha.py")
 
 anwser = input().lower
 
@@ -81,3 +82,10 @@ if anwser() == "/cmd":
 if anwser() == "/exit":
     
     quit()
+
+if anwser() == "alpha":
+
+    print("ejecutando nuevo codigo...")
+    print("ejecutando nuevo codigo...")
+    system("clear")
+    system(alpha)
