@@ -4,7 +4,7 @@ from os import system
 run = ("python3 run.py")
 alpha = ("python3 alpha.py")
 
-anwser = input().lower
+anwser = input("/").lower
 
 if anwser() == "/sumar":
     
