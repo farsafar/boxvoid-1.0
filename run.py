@@ -69,7 +69,7 @@ if anwser() == "/youtube":
 
 if anwser() == "/update":
     
-    update = ("git clone https://github.com/farsafar/boxvoid-alpha") 
+    update = ("git clone https://github.com/farsafar/boxvoid-1.0") 
     system(update)
     print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
     quit()
