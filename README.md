@@ -24,11 +24,16 @@ pip install pywhatkit
 
 COMANDOS
 
-/sumar
+, /sumar
 , /restar 
 , /division
 , /multiplicacion
 , /google
 , /musica
 , /youtube
-y por ultimo /update
+, /update
+, /cmd
+, /exit
+
+
+

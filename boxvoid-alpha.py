@@ -5,15 +5,16 @@ from os import mkdir, system
 #variables
 
 run = ("python3 run.py")
+alpha = ("python3 alpha.py")
 
 print("Bienvenido a BoxVoid")
 print("Cual es tu nombre")
 nombre = input ()
 print("hola " + nombre)
 
-anwser = input().lower
+anwser = input("/").lower
 
-if anwser() == "/sumar":
+if anwser() == "sumar":
     
     print ("Dime el primer numero")
     numero1 = int(input())
@@ -23,7 +24,7 @@ if anwser() == "/sumar":
     print (numero1 + numero2)
     system(run)
 
-if anwser() == "/resta":
+if anwser() == "resta":
     
     print ("Dime el primer numero")
     numero1 = int(input())
@@ -33,7 +34,7 @@ if anwser() == "/resta":
     print (numero1 - numero2)
     system(run)
 
-if anwser() == "/multiplicacion":
+if anwser() == "multiplicacion":
     
     print ("Dime el primer numero")
     numero1 = int(input())
@@ -43,7 +44,7 @@ if anwser() == "/multiplicacion":
     print (numero1 * numero2)
     system(run)
 
-if anwser() == "/division":
+if anwser() == "division":
     
     print ("Dime el primer numero")
     numero1 = int(input())
@@ -53,40 +54,48 @@ if anwser() == "/division":
     print (numero1 / numero2)
     system(run)
 
-if anwser() == "/google":
+if anwser() == "google":
     
     print("Que quieres buscar ")
     busqueda = input()
     pywhatkit.search(busqueda)
     system(run)
         
-if anwser() == "/musica":
+if anwser() == "musica":
 
     print("Que musica quieres escuchar")
     musica = input()
     pywhatkit.playonyt(musica)
     system(run)
 
-if anwser() == "/youtube":
+if anwser() == "youtube":
 
     print("Que Quieres ver")
     videos = input()
     pywhatkit.playonyt(videos)
     system(run)
 
-if anwser() == "/update":
-    
+if anwser() == "update":
+   
+    print("Descargado el paquete...")
     update = ("git clone https://github.com/farsafar/boxvoid-alpha ")
     system(update)
     print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
     quit()
 
-if anwser() == "/cmd":
+if anwser() == "cmd":
 
     cmd = input("$ ")
     system(cmd)
     system(run)
 
-if anwser() == "/exit":
+if anwser() == "exit":
 
     quit()
+
+if anwser() == "alpha":
+
+    print("ejucatando nuevo codigo....")
+    print("ejucatando nuevo codigo....")
+    system("clear")
+    system(alpha)
