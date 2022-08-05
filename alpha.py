@@ -15,6 +15,7 @@ if comandos() == "juegos":
     print("Creditos a kying18 por los juegos")
     print("juegos disponibles")
     print("1. tic tac toe")
+    
     print("Quieres instalarlo")
     decision = input().lower
 
