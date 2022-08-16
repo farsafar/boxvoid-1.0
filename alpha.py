@@ -23,10 +23,13 @@ if decision() == "si":
 
     print("instalando el programa...")
     system("git clone https://github.com/kying18/tic-tac-toe.git")
-    print("listo ahora en la carpeta en donde ejecutas este programa estara la carpeta de tic tac toe")
+    print("Entra a tu carpeta boxvoid y encontraras tu juego, disfrutalo")
     print("Gracias por probar esta version")
     system(alpha)
     
 if decision() == "no":
 
     system(alpha)
+
+
+    
