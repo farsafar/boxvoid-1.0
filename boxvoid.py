@@ -1,101 +1,106 @@
 from codecs import charmap_decode
 import pywhatkit
 from os import mkdir, system
+import speech_recognition as sr
 
 #variables
 
-run = ("python3 run.py")
 alpha = ("python3 alpha.py")
-
-print("Bienvenido a BoxVoid")
-print("Cual es tu nombre")
-nombre = input ()
-print("hola " + nombre)
-
-anwser = input("/").lower
-
-if anwser() == "sumar":
     
-    print ("Dime el primer numero")
-    numero1 = int(input())
-    print ("Dime el segundo numero")
-    numero2 = int(input())
-    print ("el resultado")
-    print (numero1 + numero2)
-    system(run)
+print("Bienvenido a boxvoid")
 
-if anwser() == "resta":
-    
-    print ("Dime el primer numero")
-    numero1 = int(input())
-    print ("Dime el segundo numero")
-    numero2 = int(input())
-    print ("el resultado")
-    print (numero1 - numero2)
-    system(run)
+while True:
 
-if anwser() == "multiplicacion":
-    
-    print ("Dime el primer numero")
-    numero1 = int(input())
-    print ("Dime el segundo numero")
-    numero2 = int(input())
-    print ("el resultado")
-    print (numero1 * numero2)
-    system(run)
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            print("Habla!")
+            audio = r.listen(source)
 
-if anwser() == "division":
-    
-    print ("Dime el primer numero")
-    numero1 = int(input())
-    print ("Dime el segundo numero")
-    numero2 = int(input())
-    print ("el resultado")
-    print (numero1 / numero2)
-    system(run)
+        try:
+            texto = r.recognize_google(audio)
+            print(r.recognize_google(audio))
+        except sr.UnknownValueError:
+            print("No te entiendo habla otra vez ")
 
-if anwser() == "google":
-    
-    print("Que quieres buscar ")
-    busqueda = input()
-    pywhatkit.search(busqueda)
-    system(run)
+        if "sumar" in texto:
+            
+            print ("Dime el primer numero")
+            numero1 = int(input())
+            print ("Dime el segundo numero")
+            numero2 = int(input())
+            print ("el resultado")
+            print (numero1 + numero2)
+            
+
+        if "resta" in texto:
+            
+            print ("Dime el primer numero")
+            numero1 = int(input())
+            print ("Dime el segundo numero")
+            numero2 = int(input())
+            print ("el resultado")
+            print (numero1 - numero2)
         
-if anwser() == "musica":
+        if "multiplicacion" in texto:
+            
+            print ("Dime el primer numero")
+            numero1 = int(input())
+            print ("Dime el segundo numero")
+            numero2 = int(input())
+            print ("el resultado")
+            print (numero1 * numero2)
+            
 
-    print("Que musica quieres escuchar")
-    musica = input()
-    pywhatkit.playonyt(musica)
-    system(run)
+        if "division" in texto:
+            
+            print ("Dime el primer numero")
+            numero1 = int(input())
+            print ("Dime el segundo numero")
+            numero2 = int(input())
+            print ("el resultado")
+            print (numero1 / numero2)
+        
+        if "google" in texto:
+            
+            print("Que quieres buscar ")
+            busqueda = input()
+            pywhatkit.search(busqueda)
+        
+                
+        if "musica" in texto:
 
-if anwser() == "youtube":
+            print("Que musica quieres escuchar")
+            musica = input()
+            pywhatkit.playonyt(musica)
+            
 
-    print("Que Quieres ver")
-    videos = input()
-    pywhatkit.playonyt(videos)
-    system(run)
+        if "youtube" in texto:
 
-if anwser() == "update":
-   
-    print("Descargado el paquete...")
-    update = ("git clone https://github.com/farsafar/boxvoid-1.0 ")
-    system(update)
-    print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
-    quit()
+            print("Que Quieres ver")
+            videos = input()
+            pywhatkit.playonyt(videos)
+        
+        if "actualizacion" in texto:
+        
+            print("Descargado el paquete...")
+            update = ("git clone https://github.com/farsafar/boxvoid-1.0 ")
+            system(update)
+            print("metete a la carpeta boxvoid-alpha y dentro de esa carpeta habra otra carpeta con el mismo nombre mueva esa carpeta y elimine la antigua carpeta")
+            quit()
 
-if anwser() == "cmd":
+        if "cmd" in texto:
 
-    cmd = input("$ ")
-    system(cmd)
-    system(run)
+            cmd = input("$ ")
+            system(cmd)
+            
 
-if anwser() == "exit":
+        if "salir" in texto:
 
-    quit()
+            quit()
 
-if anwser() == "alpha":
+        if "alpha" in texto:
 
-    print("ejucatando nuevo codigo....")
-    print("ejucatando nuevo codigo....")
-    system("clear")
-    system(alpha)
+            print("ejucatando nuevo codigo....")
+            print("ejucatando nuevo codigo....")
+            system("clear")
+            system(alpha)
